@@ -61,7 +61,7 @@ const getFollowers = async (userFollowerCount) => {
           edges: []
         };
       });
-    await sleep(50);
+    await sleep(300);
     userFollowers = [...userFollowers, ...followersResponse.edges];
     userFollowerCount -= actuallyFetched;
     url = `https://www.instagram.com/graphql/query/?query_hash=c76146de99bb02f6415203be841dd25a&variables={"id":"${userID}","include_reel":true,"fetch_mutual":true,"first":${batchCount},"after":"${followersResponse.endCursor}"}`;
