@@ -5,7 +5,7 @@ Githb: https://github.com/AlienRecall
 */
 
 const userID = document.getElementsByTagName('html')[0].innerHTML.match(/"id":"(.*?)"/)[1];
-const followersCount = document.getElementsByTagName('html')[0].innerHTML.match(/"userInteractionCount":"(.*?)"/)[1];
+const followersCount = document.getElementsByTagName('html')[0].innerHTML.match(/>([0-9]+)<\/span> followers/)[1];
 
 const getFollowing = async () => {
   let req = await fetch("https://i.instagram.com/api/v1/friendships/" + userID + "/following/", {
