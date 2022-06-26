@@ -7,10 +7,11 @@ This is a little script made in some minutes _"for fun"_, it basically prints ou
 
 ```
 1 - Login on instagram
-2 - Right click, and press inspect element
-3 - Go to console section
-4 - Copy the script in the script.js
-5 - Paste the scipt on the console and press Enter
+2 - Go to your profile page
+3 - Right click, and press inspect element
+4 - Go to console section
+5 - Copy the script in the script.js
+6 - Paste the scipt on the console and press Enter
 ```
 
 Once you press Enter just wait and it will prints out all the usernames of who doesn't followed you back :)
